@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0; /* Elimina el padding por defecto del body */
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* Espacio para el header fijo */
+}
+
+
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff; 
+    padding: 10px; 
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+section {
+    padding: 20px;
+    margin-top: 60px; 
+}
+
+/* Heading Style */
+h1 {
+    color: red;
+    text-align: center;
+}
+
+
+#parrafoPresentacion {
+    color: white;
+    font-size: 18px; 
+}
+
+
+#divEspecial {
+    background-color: green;
+    color: yellow;
+}
+
+
+#contenedorForm {
+    background-color: lightgreen;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #divEspecial {
+        background-color: aqua;
+        color: brown;
+    }
+
+    #contenedorForm {
+        background-color: orange;
+    }
+}
+
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+html {
+    scroll-padding-top: 60px; 
+}
